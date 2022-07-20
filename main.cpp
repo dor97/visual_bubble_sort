@@ -93,12 +93,12 @@ Color chooseColor(int curr, int toSwap, int stopSwap, int size)
 //return the max value in a vector
 int vecMax(std::vector<int> &v, int size)
 {
-	int maxAbs = 0;
+	int max = v[0];
 
-	for (int i = 0; i < size; ++i)
+	for (int i = 1; i < size; ++i)
 	{
-		if (v[i] > maxAbs)
-			maxAbs = v[i];
+		if (v[i] > max)
+			max = v[i];
 	}
-	return maxAbs;
+	return max;
 }
