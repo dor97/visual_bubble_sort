@@ -40,7 +40,7 @@ int main()
 
 		for(k = 0; k < size; ++k)
 			DrawRectangle((screenSize::width - 20) / size * (k + 1), screenSize::height - v[k] * (screenSize::height / maxSize), screenSize::recWid, v[k] * (screenSize::height / maxSize), WHITE);
-
+		DrawText("press space", 300, 300, 50, DARKBLUE);
 		DrawFPS(10, 10);
 		EndDrawing();
 	}
